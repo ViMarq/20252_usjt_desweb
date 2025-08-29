@@ -1,0 +1,9 @@
+git config --global user.name "Vitoria"
+git config --global user.email "822161472@ulife.com.br"
+git init 
+git branch -m main
+git branch -m abc 
+git branch -m main
+git config --global init.defaultBranch main
+git config --global core.editor "code --wait"
+ 
