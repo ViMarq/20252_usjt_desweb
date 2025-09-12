@@ -1,34 +1,63 @@
+import Pedido from "./Pedido"
+import Animal from "./Animal"
+import Cartao from "./Cartao"
 const App = () => {
-  return(
+  return (
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
-          <i className="fa-hippo fa-2x fa-solid"></i>
+          <Cartao 
+          cabecalho="Animais">
+            <Animal 
+              icone="cat"
+              tamanho="3"
+              espelhamento="flip-horizontal" />
+            <Animal 
+              icone="cat"
+              tamanho="2"
+              espelhamento="flip-horizontal" />
+            <Animal 
+              icone="cat"
+              tamanho="1"
+              espelhamento="flip-horizontal" />
+            <Animal 
+              icone="hippo"
+              tamanho="1"
+              espelhamento="flip-horizontal" />
+          </Cartao>
         </div>
       </div>
       <div className="row">
         <div className="col-sm-12 col-md-6 col-xl-3">
-          <div className="card">
-            <div className="card-header text-muted">
-              03/09/2025
-            </div>
-          <div className="card-body d-flex">
-            <i className="fa-solid fa-2x fa-car"></i>
-          </div>
-            <p>Carro</p>
-            <p>Porche amarelo</p>
-          </div>
+          <Pedido
+            data="14/09/25"
+            icone="car"
+            titulo="Carro"
+            descricao="Porsche amarelo" />
         </div>
         <div className="col-sm-12 col-md-6 col-lg-3">
-          
+          <Pedido
+            data="14/09/25"
+            icone="tractor"
+            titulo="Trator"
+            descricao="Trator agrícola" />
         </div>
         <div className="col-sm-12 col-md-6 col-lg-3">
-          
+          <Pedido
+            data="14/09/25"
+            icone="rocket"
+            titulo="Foguete"
+            descricao="Foguete da nasa" />
         </div>
         <div className="col-sm-12 col-md-6 col-lg-3">
-          
+          <Pedido
+            data="14/09/25"
+            icone="laptop"
+            titulo="Notebook"
+            descricao="Notebook prata" />
         </div>
       </div>
+
     </div>
   )
 }
