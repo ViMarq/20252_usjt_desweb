@@ -1,4 +1,4 @@
-const Pedido = ({data, icone, titulo, descricao}) => {
+const Pedido = ({ data, icone, titulo, descricao }) => {
     // const data = data
     // const icone = props.icone
     // const titulo = props.titulo
@@ -9,11 +9,8 @@ const Pedido = ({data, icone, titulo, descricao}) => {
     //     titulo,
     //     descricao
     // } = props // desestruturação de objeto
-    return <div className="card">
-        <div className="card-header text-muted">
-            {data}
-        </div>
-        <div className="card-body d-flex">
+    return <>
+        <div className="card">
             <div className="d-flex align-items-center">
                 <i className={`fa-solid fa-${icone} fa-2x`}></i>
             </div>
@@ -22,6 +19,7 @@ const Pedido = ({data, icone, titulo, descricao}) => {
                 <p className="text-center">{descricao}</p>
             </div>
         </div>
-    </div>
+    </>
 }
+
 export default Pedido
