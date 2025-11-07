@@ -4,6 +4,7 @@ import { IconField } from 'primereact/iconfield'
 import { InputIcon } from 'primereact/InputIcon'
 import { InputText } from 'primereact/inputtext'
 export default class Busca extends Component {
+  
   state = {
 // uma variável de estado tem a característica de que quando você altera o valor dela, a interface é atualizada automaticamente
     termoDeBusca: ''    
